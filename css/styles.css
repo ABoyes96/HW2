@@ -5,17 +5,19 @@ nav {
     text-align: center;
     font-family: Arial, sans-serif;
 }
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
-}
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    font-family: Arial, sans-serif; 
 }
 
  li {
