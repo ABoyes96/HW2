@@ -5,6 +5,12 @@ nav {
     text-align: center;
     font-family: Arial, sans-serif;
 }
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
 
 nav ul {
     list-style-type: none;
