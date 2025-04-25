@@ -1,15 +1,23 @@
 nav {
-    background-color: #2d40aa;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-family: Arial, sans-serif;
+    display: flex; /* Align items in a row */
+    justify-content: center;
+    font-family: Arial, sans-serif; /* Font family for navigation */
+    font-size: 16px; /* Font size for navigation */
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between items */
+}
+
+nav img {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
 }
 
 nav a {
@@ -20,44 +28,40 @@ nav a {
     font-family: Arial, sans-serif; 
 }
 
+nav a:hover {
+    background-color: #ddd; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
  li {
-    display: inline;
+    display: inline-block;
+    justify-content: center;
     margin-right: 10px;
 }
+
 
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
-header {
-    background-color: #c7b0b0;
-    color: white;
-    padding: 10px;
-}
-
-header img {
-    width: 300px;
-    height: 300px;
-    vertical-align: middle;
-    display: inline-block;
-    margin-top: 20px;
-}
-
 main {
-    background-color: #f4f4f4;
+    background-image: linear-gradient(to right, #f29f22, #c11313); /* Gradient background for main content */
     padding: 20px;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 24px;
+    margin-bottom: 20px; /* Space between main content and footer */
+    margin-right: 5px;
 }
 
 h1 {
-    color: #cecece;
-    background-color: #2d40aa;
+    color: #a90d0d;
     padding: 10px;
     font-size: 24px;
     font-family: Arial, sans-serif;
     text-align: center;
+    width: auto;
 }
 
 p {
@@ -67,7 +71,8 @@ p {
 }
 
 footer {
-    background-color: #2d40aa;
+    background-image: linear-gradient(to right, #48a83f, #fad82f); /* Gradient background for footer */
+    padding: 20px;
     color: white;
     text-align: center;
     padding: 10px;
@@ -75,8 +80,57 @@ footer {
 }
 
 .Bottomlink a {
-    color: rgb(255, 225, 0);
-    text-decoration: none;
+    color: rgb(255, 255, 255);
     padding: 10px 15px;
     font-family: Arial, sans-serif; 
+
+}
+
+
+main p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-size: 24px; /* Font size for paragraphs */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.p1 {
+    font-size: 24px; /* Font size for paragraphs */
+}
+/* Responsive design for smaller screens */
+
+header {
+    background-image: linear-gradient(to right, #48a83f, #fad82f); /* Gradient background for footer */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between header and main content */
+}
+
+.walks {
+    display: grid;
+    grid-template-columns: 45% 45%; /* Two equal columns */
+    gap: 20px; /* Space between grid items */
+    justify-content: center; /* Center the grid items */
+}
+
+.walks img {
+    width: 100%; /* Full width of the grid item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect for images */
+}
+
+.parks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* Space between items */
+    flex-wrap:wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between items */
+    
+}
+
+.parks img {
+    width: 225px;
+    height: 225px; /* Fixed height for images */
+    border-radius: 5px; /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect for images */
 }
