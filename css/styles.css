@@ -1,23 +1,22 @@
 nav {
-    display: flex; /* Align items in a row */
-    justify-content: center;
+    display: inline-block;
+    text-align: center;
     font-family: Arial, sans-serif; /* Font family for navigation */
     font-size: 16px; /* Font size for navigation */
+    position: relative; 
+    top: 20px;
+    width: 80%;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space between items */
+body {
+    text-align: center;
 }
 
 nav img {
     display: inline-block;
-    width: 75px;
-    height: 75px;
+    width: 10%;
+    vertical-align: middle;
+    margin-left: 20px;
 }
 
 nav a {
@@ -34,12 +33,18 @@ nav a:hover {
     border-radius: 5px; /* Rounded corners on hover */
 }
 
- li {
+nav li {
     display: inline-block;
-    justify-content: center;
     margin-right: 10px;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Aligns the list items horizontally */
+    vertical-align: middle; 
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -107,9 +112,10 @@ header {
 
 .walks {
     display: grid;
-    grid-template-columns: 45% 45%; /* Two equal columns */
+    grid-template-columns: 42% 42%; /* Two equal columns */
     gap: 20px; /* Space between grid items */
-    justify-content: center; /* Center the grid items */
+    justify-content: center;
+    align-items: center; /* Center items vertically */
 }
 
 .walks img {
